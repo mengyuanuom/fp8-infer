@@ -2,6 +2,8 @@
 
 2026-11-27 整理。比较 BF16 基线中的矩阵乘耗时占比，以及优化 MXFP8 相对 BF16 的端到端 P50 时延降低百分比。
 
+[查看 A2 上五个 OneRec 下游任务的 MXFP8 精度对比](docs/onerec-a2-mxfp8-accuracy.md)
+
 ## 对照汇总
 
 ![PanGu 1B 与 Qwen 1.7B 的 BF16 矩阵乘占比和 MXFP8 时延降幅](assets/fp8-comparison.png)
