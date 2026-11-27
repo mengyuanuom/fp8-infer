@@ -8,7 +8,7 @@
 
 [下载单页 PowerPoint：Recall@32 与 AUC](slides/onerec-recall32-auc.pptx)
 
-[下载单页 PowerPoint：社区分享风格：量化原理、模块、低精度优化与实验结果](slides/mxfp8-hif8-community-style.pptx) · [查看预览](assets/mxfp8-hif8-community-style.png)
+[下载单页 PowerPoint：社区分享风格：量化原理、模块、低精度优化与实验结果](slides/mxfp8-hif8-community-style-v2.pptx) · [查看预览](assets/mxfp8-hif8-community-style.png)
 
 ![PanGu 1B 与 Qwen 1.7B 的 BF16 矩阵乘 E2E 占比估算和 MXFP8 时延降幅](assets/fp8-comparison.png)
 
