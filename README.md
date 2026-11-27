@@ -6,6 +6,8 @@
 
 ## 对照汇总
 
+[下载单页 PowerPoint：Recall@32 与 AUC](slides/onerec-recall32-auc.pptx)
+
 ![PanGu 1B 与 Qwen 1.7B 的 BF16 矩阵乘占比和 MXFP8 时延降幅](assets/fp8-comparison.png)
 
 | Seq（token） | PanGu 1B：BF16 矩阵乘占比 | Qwen 1.7B：BF16 矩阵乘占比 | PanGu 1B：P50 时延降低 | Qwen 1.7B：P50 时延降低 |
