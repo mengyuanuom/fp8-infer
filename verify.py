@@ -21,4 +21,17 @@ assert {(r['seq'], r['precision']) for r in g['cases']} == {
 }
 assert all(r['fallbacks'] == 0 and r['prefill_replays'] == 65
            and r['decode_replays'] == 130 for r in g['cases'])
-print('PASS: 16 measurement rows and 16 PanGu graph replay records verified.')
+with (root / 'data/bf16_matmul_e2e.csv').open(encoding='utf-8', newline='') as f:
+    e2e_rows = list(csv.DictReader(f))
+assert [int(r['seq_tokens']) for r in e2e_rows] == expected
+for row in e2e_rows:
+    for model, source in [('pangu', 'pangu_1b'), ('qwen', 'qwen_1_7b')]:
+        numerator = float(row[f'{model}_bf16_matmul_mean_ms'])
+        denominator = float(row[f'{model}_bf16_e2e_p50_ms'])
+        ratio = float(row[f'{model}_bf16_matmul_e2e_pct'])
+        assert 0 < numerator <= denominator
+        assert abs(ratio - 100 * numerator / denominator) < 1e-10
+        with (root / 'data' / f'{source}.csv').open(encoding='utf-8', newline='') as f:
+            original = next(r for r in csv.DictReader(f) if r['seq_tokens'] == row['seq_tokens'])
+        assert abs(denominator - float(original['bf16_p50_ms'])) <= .00051
+print('PASS: measurement tables, graph records and 16 MatMul/E2E estimates verified.')

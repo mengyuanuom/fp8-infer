@@ -12,5 +12,16 @@
     "raw_logs_independently_verified": false
   },
   "latency_metric": "end-to-end API P50 latency reduction percentage",
-  "matmul_denominator": "sum of all NPU operator durations; excludes host time and idle gaps"
+  "matmul_denominator": "sum of all NPU operator durations; excludes host time and idle gaps",
+  "chart_matmul_e2e": {
+    "formula": "100 * BF16 profiled MatMul mean ms / BF16 unprofiled API P50 ms",
+    "numerator_requests": 5,
+    "denominator_requests": 50,
+    "interpretation": "cross-sample estimate, not a per-request E2E decomposition",
+    "data": "data/bf16_matmul_e2e.csv",
+    "sources": {
+      "pangu": "local measured sequence sweep summary",
+      "qwen": "local qwen17_118_sequence_sweep_20261127 summary; P50 values checked against published table"
+    }
+  }
 }
