@@ -1,0 +1,9 @@
+seq_tokens,bf16_matmul_pct,bf16_p50_ms,mxfp8_p50_ms,latency_reduction_pct,source
+128,51.33,22.773,20.293,10.89,user_provided_table
+256,52.56,22.592,21.049,6.83,user_provided_table
+512,55.16,25.691,21.575,16.02,user_provided_table
+1024,59.31,30.502,26.275,13.86,user_provided_table
+2048,62.63,42.639,34.625,18.8,user_provided_table
+4096,62.1,70.496,52.299,25.81,user_provided_table
+8192,57.58,125.582,94.006,25.14,user_provided_table
+10240,55.11,169.14,122.284,27.7,user_provided_table

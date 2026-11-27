@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "physical_npu": 4,
+  "cases": [
+    {
+      "seq": 128,
+      "precision": "bf16",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 128,
+      "precision": "mxfp8",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 256,
+      "precision": "bf16",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 256,
+      "precision": "mxfp8",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 512,
+      "precision": "bf16",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 512,
+      "precision": "mxfp8",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 1024,
+      "precision": "bf16",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 1024,
+      "precision": "mxfp8",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 2048,
+      "precision": "bf16",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 2048,
+      "precision": "mxfp8",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 4096,
+      "precision": "bf16",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 4096,
+      "precision": "mxfp8",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 8192,
+      "precision": "bf16",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 8192,
+      "precision": "mxfp8",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 10240,
+      "precision": "bf16",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    },
+    {
+      "seq": 10240,
+      "precision": "mxfp8",
+      "latency_requests": 60,
+      "profile_requests": 5,
+      "prefill_replays": 65,
+      "decode_replays": 130,
+      "fallbacks": 0
+    }
+  ]
+}

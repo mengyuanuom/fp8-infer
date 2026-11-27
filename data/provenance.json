@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-27",
+  "pangu": {
+    "source": "measured sequence sweep",
+    "device": "Ascend950DT",
+    "physical_npu": 4,
+    "evidence_sha256": "46b993183a58c6d2c29af6a41df1625830f786c8536b14ecf602780bd20378e4",
+    "raw_evidence_in_repository": false
+  },
+  "qwen": {
+    "source": "user-provided table in this conversation",
+    "raw_logs_independently_verified": false
+  },
+  "latency_metric": "end-to-end API P50 latency reduction percentage",
+  "matmul_denominator": "sum of all NPU operator durations; excludes host time and idle gaps"
+}
