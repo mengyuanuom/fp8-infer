@@ -8,6 +8,8 @@
 
 [下载单页 PowerPoint：Recall@32 与 AUC](slides/onerec-recall32-auc.pptx)
 
+[下载单页 PowerPoint：MXFP8／HiF8 原理与下游精度](slides/mxfp8-hif8-overview.pptx) · [查看预览](assets/mxfp8-hif8-overview.png)
+
 ![PanGu 1B 与 Qwen 1.7B 的 BF16 矩阵乘 E2E 占比估算和 MXFP8 时延降幅](assets/fp8-comparison.png)
 
 图左已改为 **BF16 矩阵乘每请求平均耗时 / BF16 API 端到端 P50 × 100%**。分子来自 5 条 profile 请求，分母来自预热后 50 条不启用 profiler 的请求，因此是跨采样的占比估算，不是同一请求的精确 E2E 分解。两模型的原始耗时均已从本地序列扫描结果提取，见 [E2E 占比明细 CSV](data/bf16_matmul_e2e.csv)。图右继续显示端到端 P50 时延降低百分比。
